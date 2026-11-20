@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="769" viewBox="0 0 1280 769">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#16203a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38d9c0"/>
+      <stop offset="100%" stop-color="#6c8cff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="769" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1280" height="4" fill="url(#accent)"/>
+
+  <!-- Left: Text -->
+  <g transform="translate(100, 160)">
+    <text x="0" y="0" font-family="Inter,system-ui" font-size="48" font-weight="800" fill="#e8edf7" letter-spacing="-1">
+      I build responsive
+    </text>
+    <text x="0" y="70" font-family="Inter,system-ui" font-size="48" font-weight="800" fill="url(#accent)" letter-spacing="-1">
+      websites & web apps
+    </text>
+    <text x="0" y="150" font-family="Inter,system-ui" font-size="22" font-weight="400" fill="#9aa8c2" width="500">
+      Clean HTML/CSS/JS · Vanilla JS apps · Flutter mobile · Bug fixes · WordPress
+    </text>
+
+    <!-- Badges -->
+    <g transform="translate(0, 230)">
+      <g class="badge" transform="translate(0, 0)">
+        <rect x="0" y="0" width="160" height="44" rx="22" fill="rgba(56,217,192,0.15)" stroke="#38d9c0" stroke-width="1.5"/>
+        <text x="80" y="28" text-anchor="middle" font-family="Inter" font-size="15" font-weight="600" fill="#38d9c0">HTML • CSS • JS</text>
+      </g>
+      <g class="badge" transform="translate(180, 0)">
+        <rect x="0" y="0" width="140" height="44" rx="22" fill="rgba(108,140,255,0.15)" stroke="#6c8cff" stroke-width="1.5"/>
+        <text x="70" y="28" text-anchor="middle" font-family="Inter" font-size="15" font-weight="600" fill="#6c8cff">React (basic)</text>
+      </g>
+      <g class="badge" transform="translate(340, 0)">
+        <rect x="0" y="0" width="120" height="44" rx="22" fill="rgba(2,196,142,0.15)" stroke="#02c48e" stroke-width="1.5"/>
+        <text x="60" y="28" text-anchor="middle" font-family="Inter" font-size="15" font-weight="600" fill="#02c48e">Flutter</text>
+      </g>
+      <g class="badge" transform="translate(0, 60)">
+        <rect x="0" y="0" width="130" height="44" rx="22" fill="rgba(229,72,77,0.15)" stroke="#e5484d" stroke-width="1.5"/>
+        <text x="65" y="28" text-anchor="middle" font-family="Inter" font-size="15" font-weight="600" fill="#e5484d">Bug Fixes</text>
+      </g>
+      <g class="badge" transform="translate(150, 60)">
+        <rect x="0" y="0" width="140" height="44" rx="22" fill="rgba(71,122,209,0.15)" stroke="#477ad1" stroke-width="1.5"/>
+        <text x="70" y="28" text-anchor="middle" font-family="Inter" font-size="15" font-weight="600" fill="#477ad1">WordPress</text>
+      </g>
+    </g>
+
+    <!-- CTA -->
+    <g transform="translate(0, 380)">
+      <rect x="0" y="0" width="320" height="56" rx="14" fill="url(#accent)" filter="url(#glow)"/>
+      <text x="160" y="36" text-anchor="middle" font-family="Inter" font-size="20" font-weight="700" fill="#06231f">
+        Hire me →
+      </text>
+    </g>
+  </g>
+
+  <!-- Right: Visual cards -->
+  <g transform="translate(720, 80)">
+    <!-- Card 1 -->
+    <g filter="url(#glow)">
+      <rect x="0" y="0" width="280" height="280" rx="20" fill="#1d2a48" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="140" cy="90" r="50" fill="rgba(56,217,192,0.15)" stroke="#38d9c0" stroke-width="2"/>
+      <text x="140" y="98" text-anchor="middle" font-size="28" fill="#38d9c0">🌐</text>
+      <text x="140" y="170" text-anchor="middle" font-family="Inter" font-size="20" font-weight="700" fill="#e8edf7">Websites</text>
+      <text x="140" y="205" text-anchor="middle" font-family="Inter" font-size="14" fill="#9aa8c2">Responsive • Fast</text>
+      <text x="140" y="240" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#38d9c0">HTML • CSS • JS</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(310, 0)" filter="url(#glow)">
+      <rect x="0" y="0" width="280" height="280" rx="20" fill="#1d2a48" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="140" cy="90" r="50" fill="rgba(108,140,255,0.15)" stroke="#6c8cff" stroke-width="2"/>
+      <text x="140" y="98" text-anchor="middle" font-size="28" fill="#6c8cff">⚙️</text>
+      <text x="140" y="170" text-anchor="middle" font-family="Inter" font-size="20" font-weight="700" fill="#e8edf7">Web Apps</text>
+      <text x="140" y="205" text-anchor="middle" font-family="Inter" font-size="14" fill="#9aa8c2">Dashboards • Tools</text>
+      <text x="140" y="240" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#6c8cff">JS • localStorage</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(620, 0)" filter="url(#glow)">
+      <rect x="0" y="0" width="280" height="280" rx="20" fill="#1d2a48" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="140" cy="90" r="50" fill="rgba(2,196,142,0.15)" stroke="#02c48e" stroke-width="2"/>
+      <text x="140" y="98" text-anchor="middle" font-size="28" fill="#02c48e">📱</text>
+      <text x="140" y="170" text-anchor="middle" font-family="Inter" font-size="20" font-weight="700" fill="#e8edf7">Mobile</text>
+      <text x="140" y="205" text-anchor="middle" font-family="Inter" font-size="14" fill="#9aa8c2">Flutter • PWA</text>
+      <text x="140" y="240" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#02c48e">Dart • Android</text>
+    </g>
+
+    <!-- Bottom row -->
+    <g transform="translate(0, 310)" filter="url(#glow)">
+      <rect x="0" y="0" width="280" height="180" rx="20" fill="#1d2a48" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="140" cy="60" r="40" fill="rgba(255,189,46,0.15)" stroke="#ffbd2e" stroke-width="2"/>
+      <text x="140" y="68" text-anchor="middle" font-size="24" fill="#ffbd2e">🤖</text>
+      <text x="140" y="125" text-anchor="middle" font-family="Inter" font-size="18" font-weight="700" fill="#e8edf7">Scraping</text>
+      <text x="140" y="155" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#ffbd2e">Python • Playwright</text>
+    </g>
+
+    <g transform="translate(310, 310)" filter="url(#glow)">
+      <rect x="0" y="0" width="280" height="180" rx="20" fill="#1d2a48" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="140" cy="60" r="40" fill="rgba(229,72,77,0.15)" stroke="#e5484d" stroke-width="2"/>
+      <text x="140" y="68" text-anchor="middle" font-size="24" fill="#e5484d">🐛</text>
+      <text x="140" y="125" text-anchor="middle" font-family="Inter" font-size="18" font-weight="700" fill="#e8edf7">Bug Fixes</text>
+      <text x="140" y="155" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#e5484d">CSS • JS • OWASP</text>
+    </g>
+
+    <g transform="translate(620, 310)" filter="url(#glow)">
+      <rect x="0" y="0" width="280" height="180" rx="20" fill="#1d2a48" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="140" cy="60" r="40" fill="rgba(71,122,209,0.15)" stroke="#477ad1" stroke-width="2"/>
+      <text x="140" y="68" text-anchor="middle" font-size="24" fill="#477ad1">🔧</text>
+      <text x="140" y="125" text-anchor="middle" font-family="Inter" font-size="18" font-weight="700" fill="#e8edf7">WordPress</text>
+      <text x="140" y="155" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#477ad1">Elementor • Woo</text>
+    </g>
+  </g>
+</svg>

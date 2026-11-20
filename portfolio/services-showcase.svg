@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    width="1200"
+    height="1600"
+    viewBox="0 0 1200 1600"
+    version="1.1">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0b1120;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16203a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38d9c0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6c8cff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d2a48;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16203a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <!-- Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(56,217,192,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1600" fill="url(#bgGrad)"/>
+  <rect width="1200" height="1600" fill="url(#gridPattern)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#accentGrad)"/>
+
+  <!-- Title Section -->
+  <g transform="translate(100, 100)">
+    <text x="0" y="0"
+          font-family="Inter, system-ui, sans-serif"
+          font-size="48"
+          font-weight="800"
+          fill="#e8edf7"
+          letter-spacing="-1.5">What I Build</text>
+    <text x="0" y="60"
+          font-family="Inter, system-ui, sans-serif"
+          font-size="22"
+          font-weight="400"
+          fill="#9aa8c2"
+          letter-spacing="0.3">Clean, responsive websites · Web apps · Mobile apps · Bug fixes</text>
+
+    <!-- Accent line -->
+    <rect x="0" y="100" width="180" height="4" rx="2" fill="url(#accentGrad)" filter="url(#glow)"/>
+  </g>
+
+  <!-- Services Grid (3x2) -->
+  <g id="services" transform="translate(100, 260)">
+    <!-- Service 1: Responsive Websites -->
+    <g class="service-card" transform="translate(0, 0)" filter="url(#cardShadow)">
+      <rect x="0" y="0" width="360" height="380" rx="20" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="180" cy="90" r="56" fill="rgba(56,217,192,0.12)" stroke="rgba(56,217,192,0.25)" stroke-width="2"/>
+      <text x="180" y="96" text-anchor="middle" font-family="Inter" font-size="28" fill="#38d9c0">🌐</text>
+      <text x="180" y="210" text-anchor="middle"
+            font-family="Inter" font-size="26" font-weight="700" fill="#e8edf7">Responsive<br/>Websites</text>
+      <text x="180" y="270" text-anchor="middle"
+            font-family="Inter" font-size="16" fill="#9aa8c2" width="300">
+        <tspan x="180" dy="0">Landing pages, portfolios,</tspan>
+        <tspan x="180" dy="22">business sites, blogs</tspan>
+      </text>
+      <g transform="translate(40, 320)">
+        <rect x="0" y="0" width="100" height="30" rx="15" fill="rgba(56,217,192,0.15)"/>
+        <text x="50" y="20" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#38d9c0">HTML • CSS • JS</text>
+      </g>
+      <g transform="translate(220, 320)">
+        <rect x="0" y="0" width="100" height="30" rx="15" fill="rgba(108,140,255,0.15)"/>
+        <text x="50" y="20" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#6c8cff">React (basic)</text>
+      </g>
+    </g>
+
+    <!-- Service 2: Web Apps -->
+    <g class="service-card" transform="translate(420, 0)" filter="url(#cardShadow)">
+      <rect x="0" y="0" width="360" height="380" rx="20" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="180" cy="90" r="56" fill="rgba(108,140,255,0.12)" stroke="rgba(108,140,255,0.25)" stroke-width="2"/>
+      <text x="180" y="96" text-anchor="middle" font-family="Inter" font-size="28" fill="#6c8cff">⚙️</text>
+      <text x="180" y="210" text-anchor="middle"
+            font-family="Inter" font-size="26" font-weight="700" fill="#e8edf7">Web Apps</text>
+      <text x="180" y="270" text-anchor="middle"
+            font-family="Inter" font-size="16" fill="#9aa8c2" width="300">
+        <tspan x="180" dy="0">Dashboards, trackers,</tspan>
+        <tspan x="180" dy="22">forms, localStorage apps</tspan>
+      </text>
+      <g transform="translate(40, 320)">
+        <rect x="0" y="0" width="100" height="30" rx="15" fill="rgba(56,217,192,0.15)"/>
+        <text x="50" y="20" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#38d9c0">Vanilla JS</text>
+      </g>
+      <g transform="translate(220, 320)">
+        <rect x="0" y="0" width="100" height="30" rx="15" fill="rgba(108,140,255,0.15)"/>
+        <text x="50" y="20" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#6c8cff">localStorage</text>
+      </g>
+    </g>
+
+    <!-- Service 3: Bug Fixes -->
+    <g class="service-card" transform="translate(840, 0)" filter="url(#cardShadow)">
+      <rect x="0" y="0" width="360" height="380" rx="20" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="180" cy="90" r="56" fill="rgba(229,72,77,0.12)" stroke="rgba(229,72,77,0.25)" stroke-width="2"/>
+      <text x="180" y="96" text-anchor="middle" font-family="Inter" font-size="28" fill="#e5484d">🐛</text>
+      <text x="180" y="210" text-anchor="middle"
+            font-family="Inter" font-size="26" font-weight="700" fill="#e8edf7">Bug Fixes<br/>& QA</text>
+      <text x="180" y="270" text-anchor="middle"
+            font-family="Inter" font-size="16" fill="#9aa8c2" width="300">
+        <tspan x="180" dy="0">Layout breaks, console</tspan>
+        <tspan x="180" dy="22">errors, mobile issues</tspan>
+      </text>
+      <g transform="translate(40, 320)">
+        <rect x="0" y="0" width="100" height="30" rx="15" fill="rgba(229,72,77,0.15)"/>
+        <text x="50" y="20" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#e5484d">CSS / JS</text>
+      </g>
+      <g transform="translate(220, 320)">
+        <rect x="0" y="0" width="100" height="30" rx="15" fill="rgba(108,140,255,0.15)"/>
+        <text x="50" y="20" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#6c8cff">OWASP basics</text>
+      </g>
+    </g>
+
+    <!-- Service 4: Flutter / Mobile -->
+    <g class="service-card" transform="translate(0, 440)" filter="url(#cardShadow)">
+      <rect x="0" y="0" width="360" height="380" rx="20" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="180" cy="90" r="56" fill="rgba(2,196,142,0.12)" stroke="rgba(2,196,142,0.25)" stroke-width="2"/>
+      <text x="180" y="96" text-anchor="middle" font-family="Inter" font-size="28" fill="#02c48e">📱</text>
+      <text x="180" y="210" text-anchor="middle"
+            font-family="Inter" font-size="26" font-weight="700" fill="#e8edf7">Flutter /<br/>Android Apps</text>
+      <text x="180" y="270" text-anchor="middle"
+            font-family="Inter" font-size="16" fill="#9aa8c2" width="300">
+        <tspan x="180" dy="0">Cross-platform apps,</tspan>
+        <tspan x="180" dy="22">PWA, APK builds</tspan>
+      </text>
+      <g transform="translate(40, 320)">
+        <rect x="0" y="0" width="110" height="30" rx="15" fill="rgba(2,196,142,0.15)"/>
+        <text x="55" y="20" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#02c48e">Flutter / Dart</text>
+      </g>
+      <g transform="translate(220, 320)">
+        <rect x="0" y="0" width="100" height="30" rx="15" fill="rgba(108,140,255,0.15)"/>
+        <text x="50" y="20" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#6c8cff">React Native</text>
+      </g>
+    </g>
+
+    <!-- Service 5: WordPress / CMS -->
+    <g class="service-card" transform="translate(420, 440)" filter="url(#cardShadow)">
+      <rect x="0" y="0" width="360" height="380" rx="20" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="180" cy="90" r="56" fill="rgba(71,122,209,0.12)" stroke="rgba(71,122,209,0.25)" stroke-width="2"/>
+      <text x="180" y="96" text-anchor="middle" font-family="Inter" font-size="28" fill="#477ad1">🔧</text>
+      <text x="180" y="210" text-anchor="middle"
+            font-family="Inter" font-size="26" font-weight="700" fill="#e8edf7">WordPress /<br/>Elementor</text>
+      <text x="180" y="270" text-anchor="middle"
+            font-family="Inter" font-size="16" fill="#9aa8c2" width="300">
+        <tspan x="180" dy="0">Theme fixes, page builds,</tspan>
+        <tspan x="180" dy="22">WooCommerce setup</tspan>
+      </text>
+      <g transform="translate(40, 320)">
+        <rect x="0" y="0" width="120" height="30" rx="15" fill="rgba(71,122,209,0.15)"/>
+        <text x="60" y="20" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#477ad1">Elementor</text>
+      </g>
+      <g transform="translate(220, 320)">
+        <rect x="0" y="0" width="100" height="30" rx="15" fill="rgba(108,140,255,0.15)"/>
+        <text x="50" y="20" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#6c8cff">WooCommerce</text>
+      </g>
+    </g>
+
+    <!-- Service 6: Scraping / Automation -->
+    <g class="service-card" transform="translate(840, 440)" filter="url(#cardShadow)">
+      <rect x="0" y="0" width="360" height="380" rx="20" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="180" cy="90" r="56" fill="rgba(255,189,46,0.12)" stroke="rgba(255,189,46,0.25)" stroke-width="2"/>
+      <text x="180" y="96" text-anchor="middle" font-family="Inter" font-size="28" fill="#ffbd2e">🤖</text>
+      <text x="180" y="210" text-anchor="middle"
+            font-family="Inter" font-size="26" font-weight="700" fill="#e8edf7">Scraping /<br/>Automation</text>
+      <text x="180" y="270" text-anchor="middle"
+            font-family="Inter" font-size="16" fill="#9aa8c2" width="300">
+        <tspan x="180" dy="0">Data extraction, bots,</tspan>
+        <tspan x="180" dy="22">Playwright / Python</tspan>
+      </text>
+      <g transform="translate(40, 320)">
+        <rect x="0" y="0" width="100" height="30" rx="15" fill="rgba(255,189,46,0.15)"/>
+        <text x="50" y="20" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#ffbd2e">Python</text>
+      </g>
+      <g transform="translate(220, 320)">
+        <rect x="0" y="0" width="120" height="30" rx="15" fill="rgba(108,140,255,0.15)"/>
+        <text x="60" y="20" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#6c8cff">Playwright</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Process Section -->
+  <g transform="translate(100, 1120)">
+    <text x="0" y="0"
+          font-family="Inter" font-size="32" font-weight="700" fill="#e8edf7">How We Work</text>
+    <rect x="0" y="20" width="140" height="4" rx="2" fill="url(#accentGrad)"/>
+  </g>
+
+  <g id="process" transform="translate(100, 1200)">
+    <!-- Step 1 -->
+    <g class="step" transform="translate(0, 0)">
+      <circle cx="50" cy="50" r="50" fill="rgba(56,217,192,0.12)" stroke="#38d9c0" stroke-width="3"/>
+      <text x="50" y="58" text-anchor="middle" font-family="Inter" font-size="22" font-weight="800" fill="#38d9c0">1</text>
+      <text x="130" y="35" font-family="Inter" font-size="22" font-weight="700" fill="#e8edf7">You share the brief</text>
+      <text x="130" y="65" font-family="Inter" font-size="16" fill="#9aa8c2">Scope, reference links, timeline, budget</text>
+    </g>
+    <line x1="50" y1="100" x2="50" y2="180" stroke="rgba(56,217,192,0.25)" stroke-width="2" stroke-dasharray="6,6"/>
+
+    <!-- Step 2 -->
+    <g class="step" transform="translate(0, 180)">
+      <circle cx="50" cy="50" r="50" fill="rgba(108,140,255,0.12)" stroke="#6c8cff" stroke-width="3"/>
+      <text x="50" y="58" text-anchor="middle" font-family="Inter" font-size="22" font-weight="800" fill="#6c8cff">2</text>
+      <text x="130" y="35" font-family="Inter" font-size="22" font-weight="700" fill="#e8edf7">I build & demo</text>
+      <text x="130" y="65" font-family="Inter" font-size="16" fill="#9aa8c2">Working version on test URL / APK</text>
+    </g>
+    <line x1="50" y1="230" x2="50" y2="310" stroke="rgba(108,140,255,0.25)" stroke-width="2" stroke-dasharray="6,6"/>
+
+    <!-- Step 3 -->
+    <g class="step" transform="translate(0, 360)">
+      <circle cx="50" cy="50" r="50" fill="rgba(2,196,142,0.12)" stroke="#02c48e" stroke-width="3"/>
+      <text x="50" y="58" text-anchor="middle" font-family="Inter" font-size="22" font-weight="800" fill="#02c48e">3</text>
+      <text x="130" y="35" font-family="Inter" font-size="22" font-weight="700" fill="#e8edf7">You review & approve</text>
+      <text x="130" y="65" font-family="Inter" font-size="16" fill="#9aa8c2">Revisions included · Final delivery</text>
+    </g>
+  </g>
+
+  <!-- CTA / Contact -->
+  <g transform="translate(100, 1500)">
+    <rect x="0" y="0" width="1000" height="80" rx="16" fill="url(#accentGrad)" filter="url(#glow)"/>
+    <text x="500" y="52" text-anchor="middle"
+          font-family="Inter" font-size="24" font-weight="700" fill="#06231f">
+      Ready to start? → <a href="mailto:akamar3112-ctrl@users.noreply.github.com" style="text-decoration:underline;">Email me</a> or message on Upwork/Fiverr
+    </text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(600, 1570)">
+    <text x="0" y="0" text-anchor="middle"
+          font-family="Inter" font-size="14" fill="#5a6a8a">
+      Portfolio: <a href="https://portfolio-two-theta-39.vercel.app" style="fill:#38d9c0;text-decoration:none;">portfolio-two-theta-39.vercel.app</a> · GitHub: akamar3112-ctrl
+    </text>
+  </g>
+</svg>
