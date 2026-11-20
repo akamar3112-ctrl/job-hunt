@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Tracker — Track your applications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="brand"><span class="brand-mark">JT</span><div><h1>Job Tracker</h1><p>Stay on top of your search</p></div></div>
+      <button class="btn btn-ghost" id="exportBtn" title="Download applications as CSV">⬇ Export CSV</button>
+    </header>
+
+    <!-- Stats -->
+    <section class="stats" id="stats" aria-label="Application statistics"></section>
+
+    <!-- Add form -->
+    <section class="card">
+      <h2>Add an application</h2>
+      <form id="addForm" class="form-grid">
+        <div class="field"><label for="company">Company *</label><input id="company" required placeholder="e.g. Acme Corp" maxlength="80" /></div>
+        <div class="field"><label for="role">Role *</label><input id="role" required placeholder="e.g. Frontend Developer" maxlength="80" /></div>
+        <div class="field"><label for="url">Job URL</label><input id="url" type="url" placeholder="https://..." /></div>
+        <div class="field"><label for="status">Status</label>
+          <select id="status">
+            <option value="Applied">Applied</option>
+            <option value="Interview">Interview</option>
+            <option value="Offer">Offer</option>
+            <option value="Rejected">Rejected</option>
+          </select>
+        </div>
+        <div class="field field-full"><label for="notes">Notes</label><input id="notes" placeholder="Contact name, salary, next step..." maxlength="200" /></div>
+        <div class="field-full"><button class="btn btn-primary" type="submit">＋ Add application</button></div>
+      </form>
+    </section>
+
+    <!-- Filters -->
+    <section class="toolbar">
+      <div class="filters" id="filters">
+        <button class="chip active" data-filter="All">All</button>
+        <button class="chip" data-filter="Applied">Applied</button>
+        <button class="chip" data-filter="Interview">Interview</button>
+        <button class="chip" data-filter="Offer">Offer</button>
+        <button class="chip" data-filter="Rejected">Rejected</button>
+      </div>
+      <input id="search" class="search" type="search" placeholder="🔍 Search..." aria-label="Search applications" />
+    </section>
+
+    <!-- List -->
+    <section id="list" class="list" aria-live="polite"></section>
+    <p id="empty" class="empty" hidden>No applications yet. Add your first one above ↑</p>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
