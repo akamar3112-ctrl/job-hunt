@@ -1,5 +1,8 @@
 # 🚀 Job Hunt Kit
 
+**Portfolio LIVE:** https://portfolio-two-theta-39.vercel.app
+**GitHub repo:** https://github.com/akamar3112-ctrl/job-hunt
+
 Ye folder aapke remote job / freelance search ke liye hai. Sab kuch free tools se banaya gaya hai.
 
 ## Folder structure

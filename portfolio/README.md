@@ -1,5 +1,8 @@
 # Portfolio website — setup
 
+**🔴 LIVE:** https://portfolio-two-theta-39.vercel.app
+**GitHub:** https://github.com/akamar3112-ctrl/job-hunt/tree/main/portfolio
+
 Ye aapka online "shop window" hai. Client yahi dekhega ki aap kaam kar sakte ho.
 
 ## 1. Apni details badlein
